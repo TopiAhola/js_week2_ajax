@@ -24,7 +24,7 @@ async function fetchStuff() {
         let responseJson = await response.json();
         console.log(responseJson);
 
-        const tuloste = 'Response in console. <br>' +'Test: '+responseJson.data.email ;
+        const tuloste = 'Response in console. <br>' + 'Test: ' + responseJson.data.email;
 
         //Tulostetaan moduuli, tehtävän numero ja tuloste sivulle:
         document.querySelector(`#moduuli`).innerHTML = moduuli;

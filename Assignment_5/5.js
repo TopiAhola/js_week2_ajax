@@ -797,6 +797,7 @@ function showDialog(event) {
   let closeDialogButton = document.createElement('button');
   closeDialogButton.addEventListener('click', closeDialog);
   closeDialogButton.innerHTML = 'Close';
+  closeDialogButton.style.fontSize = '1.5em';
   dialog.appendChild(closeDialogButton);
 
   //get position of row, put dialog there

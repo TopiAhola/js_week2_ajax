@@ -6,7 +6,7 @@ body {
 
 }
 h1 {
-    background-color: mediumturquoise;
+    background-color: whitesmoke;
     margin: 0;
     padding: 20px 10px;
 }
@@ -21,7 +21,7 @@ table {
 }
 
 th {
-  background-color: #42e2b8;
+  background-color: #eb8a90;
   border-bottom: 1px solid #ccc;
   font-weight: bolder;
   padding: 0.5em 1em;

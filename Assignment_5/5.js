@@ -162,14 +162,17 @@ async function updateMenu(menuElement, restId){
                 menuElement.appendChild(listElem);
             }
 
-            let errorListElem = document.createElement('li');
-            errorListElem.innerHTML = 'Menu placeholder';
+            if(objectArray.courses.length === 0){
+                let errorListElem = document.createElement('li');
+                errorListElem.innerHTML = 'Menu not available';
+                menuElement.appendChild(errorListElem);
+            }
 
 
         } else {
             console.log("Response not ok")
             let errorListElem = document.createElement('li');
-            errorListElem.innerHTML = 'Menu not available';
+            errorListElem.innerHTML = 'Menu not available or loading';
             menuElement.appendChild(errorListElem);
         }
 
